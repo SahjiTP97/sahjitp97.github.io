@@ -1,0 +1,428 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Set font and background */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container for alignment */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* Header styles */
+header {
+    background-color: #cccccc;
+    color: white;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top when scrolling */
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .top-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Header icons */
+.header-icons, .header-icons-right {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.header-icons-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.header-icons img, .header-icons-right img {
+    width: 30px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.header-icons img:hover, .header-icons-right img:hover {
+    transform: scale(1.1);
+}
+
+.header-icons-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* About section */
+#about {
+    padding: 0px 0;
+    background-color: #f0f2f5;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Working Experience section */
+#experience {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+#experience h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.experience-item h4 .company-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.experience-item p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Projects section */
+#projects {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.project-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+.project-item.active {
+    display: flex;
+}
+
+.project-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: row; /* Display image and text side by side */
+    max-width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.project-details p {
+    flex: 1;
+    margin-right: 30px; /* Space between text and image */
+}
+
+.project-details img {
+    max-width: 50%; /* Ensure the image fits well next to text */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navigation arrows */
+.navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 95%; /* Pushes arrows closer to the edges */
+    margin: 20px auto 0;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2.5em; /* Maintain size for clarity */
+    width: 60px; /* Ensure circular shape */
+    height: 60px; /* Ensure circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* CV section */
+#cv {
+    padding: 0px 0;
+    background-color: #f0f2f5;
+    text-align: center;
+}
+
+#cv h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cv p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #cccccc;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #345cc9;
+    transform: translateY(-5px);
+}
+
+/* Contact section */
+#contact {
+    padding: 0px 0;
+    background-color: #f0f2f5;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	margin-bottom: 50px;
+}
+
+#contact a {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #e74c3c;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+#contact a:hover {
+    color: #e74c3c;
+    border-bottom-color: transparent;
+}
+
+/* Footer styles */
+footer {
+    background-color: #cccccc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+    position: relative;
+}
+
+.footer-icons {
+    position: absolute;
+    top: 10px; /* Position at the top */
+    right: 10px; /* Align to the right */
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.background-wrapper {
+    background-image: url('res/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the background is fixed while content scrolls */
+}
+
+ul.job-description {
+    list-style-type: disc; /* Ensures bullets are displayed */
+    margin-left: 20px; /* Indent the list */
+    padding-left: 20px; /* Extra space for better indentation */
+}
+
+ul.job-description li {
+    margin-bottom: 10px; /* Space between each bullet point */
+}
+
+.github-icons img {
+    width: 10px;
+    height: 10px;
+    transition: transform 0.3s ease;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+        opacity: 0; /* Start with no opacity */
+    }
+    100% {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        transform: translateX(0); /* Start at the original position */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+        opacity: 0; /* Fully invisible */
+    }
+}
+
+#cv {
+    opacity: 0; /* Initially invisible */
+    transform: translateX(-100%); /* Initially off-screen to the left */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#cv.visible {
+    animation: slideInFromLeft 1s ease-out forwards; /* Trigger the slide-in animation */
+}
+
+#cv:not(.visible) {
+    animation: slideOutToLeft 1s ease-out forwards; /* Trigger the slide-out animation */
+}
+
+html {
+    scroll-behavior: smooth;
+}
