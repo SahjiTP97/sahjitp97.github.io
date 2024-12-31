@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="container-fluid p-3 bg-light position-sticky top-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Menu Icon -->
+            <button id="menuToggle" class="btn p-0">
+                <img src="resources/menu.png" alt="Menu Icon" style="width: 40px; height: 40px;">
+            </button>
+
+            <!-- Logo -->
+            <img src="resources/logo2.png" alt="Logo" class="mx-auto d-block" style="width: 80px; height: auto;">
+        </div>
+
+        <!-- Slide-Out Menu -->
+        <div id="menuTab" class="position-fixed top-0 start-0 bg-white shadow h-100 p-4">
+            <button id="closeMenu" class="btn-close position-absolute top-0 end-0 m-3"></button>
+            <ul class="nav flex-column text-start">
+                <li class="nav-item mb-3">
+                    <a href="index.html" class="nav-link text-dark">Home</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="About.html" class="nav-link text-dark">About Me</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="Tours.html" class="nav-link text-dark">Tours</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="Contact.html" class="nav-link text-dark">Contact</a>
+                </li>
+                <li class="nav-item d-flex gap-3 mt-4">
+                    <a href="lang-gr.html">
+                        <img src="resources/greece.png" alt="Greek" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="lang-en.html">
+                        <img src="resources/england.png" alt="English" style="width: 30px; height: 30px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+	
+	<div id="menuOverlay"></div>
+	
+
+<section id="contactSection" class="container-fluid p-0">
+    <!-- Full-Width Image with Centered Text and Parallax Effect -->
+    <div class="parallax position-relative">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold">Contact</h1>
+        </div>
+    </div>
+
+    <!-- Three Cards Section -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- Wide Text Card -->
+            <div class="col-md-6">
+                <div class="card p-4 text-center h-100 shadow">
+                    <h5 class="card-title">Get in Touch</h5>
+                    <p class="card-text">
+                        Do not hesitate to contact me for any question. I will be more than happy to help you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- First Button Card -->
+            <div class="col-md-3">
+				<a href="tel:+306938676085" class="text-decoration-none">
+					<div class="card p-4 text-center h-100 shadow">
+						<img src="resources/phone.png" alt="Call Us" class="img-fluid mb-3" style="width: 60px; height: auto;">
+						<p class="card-text">Call Me</p>
+					</div>
+				</a>
+            </div>
+
+            <!-- Second Button Card -->
+            <div class="col-md-3">
+				<a href="mailto:pariskaponis@yahoo.gr" class="text-decoration-none">
+					<div class="card p-4 text-center h-100 shadow">
+						<img src="resources/letter.png" alt="Email Us" class="img-fluid mb-3" style="width: 60px; height: auto;">
+						<p class="card-text">Email Me</p>
+					</div>
+				</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map and Form Section -->
+    <div class="container my-5">
+        <div class="row g-4 align-items-stretch">
+            <!-- Google Map -->
+            <div class="col-md-6">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.570286673056!2d23.732799515679!3d37.9756632797219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd18b1c7a69f%3A0x653321720b98e54e!2sSyntagma%20Square%2C%20Athens%2C%20Greece!5e0!3m2!1sen!2sgr!4v1680022104678!5m2!1sen!2sgr"
+                    width="100%" height="100%" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form class="h-100 d-flex flex-column justify-content-between">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Google reCAPTCHA placeholder -->
+                        <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Floating Contact Button -->
+<div id="contactButtonContainer">
+    <!-- Main Button -->
+    <button id="contactButton" class="btn p-0">
+        <img src="resources/contact.png" alt="Contact" style="width: 60px; height: 60px;">
+    </button>
+
+    <!-- Email Button -->
+    <a href="mailto:example@example.com" id="emailButton" class="contact-option">
+        <img src="resources/email.png" alt="Email" style="width: 50px; height: 50px;">
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/123456789" id="whatsappButton" class="contact-option">
+        <img src="resources/whatsapp.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+    </a>
+
+    <!-- Viber Button -->
+    <a href="viber://chat?number=123456789" id="viberButton" class="contact-option">
+        <img src="resources/viber.png" alt="Viber" style="width: 50px; height: 50px;">
+    </a>
+</div>
+
+<section class="container-fluid my-5">
+    <div class="row g-4">
+        <!-- About Me Card -->
+        <div class="col">
+            <div class="card p-3 text-center">
+                <h5 class="card-title">About Me</h5>
+                <p class="card-text">Hi, I'm Paris.<br><br> I’m an Official Tour Guide licensed by the Ministry of Tourism to give tours both inside and outside sites and museums. I am required to wear a blue badge so anyone without the blue badge is illegal in Greece.</p>
+            </div>
+        </div>
+        <!-- Navigation Card -->
+        <div class="col">
+            <div class="card p-3 text-center">
+                <h5 class="card-title">Navigation</h5>
+                <p class="card-text">Find your way with ease.</p>
+                <div class="d-flex justify-content-center gap-2 mt-2">
+                    <ul class="nav flex-column text-start">
+                        <li class="nav-item mb-3">
+                            <a href="index.html" class="nav-link text-dark">Home</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="About.html" class="nav-link text-dark">About Me</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="Tours.html" class="nav-link text-dark">Tours</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="Contact.html" class="nav-link text-dark">Contact</a>
+                        </li>
+                        <li class="nav-item d-flex gap-3 mt-4">
+                            <a href="lang-gr.html">
+                                <img src="resources/greece.png" alt="Greek" style="width: 30px; height: 30px;">
+                            </a>
+                            <a href="lang-en.html">
+                                <img src="resources/england.png" alt="English" style="width: 30px; height: 30px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Why Me Card -->
+        <div class="col">
+            <div class="card p-3 text-center">
+                <h5 class="card-title">Why Me?</h5>
+                <ul class="list-unstyled mt-2">
+                    <li>✔ Unique Experiences</li>
+                    <li>✔ Professional Guide</li>
+                    <li>✔ Personalized Tours</li>
+                    <li>✔ Expert Knowledge</li>
+                    <li>✔ Flexibility</li>
+                    <li>✔ Authentic Insights</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Contact Details Card -->
+        <div class="col">
+            <div class="card p-3 text-center">
+                <h5 class="card-title">Contact Details</h5>
+                <p class="card-text">
+					Don’t hesitate to contact me for any questions. I will be more than happy to help you.<br>
+					Paris Kaponis<br>
+					Official Tour Guide<br><br>
+                    Phone: +30 6938676085<br>
+                    Email: pariskaponis@yahoo.gr<br>
+                    Location: Athens, Greece
+                </p>
+            </div>
+        </div>
+        <!-- Official Tourist Guide Card -->
+        <div class="col">
+            <div class="card p-3 text-center">
+                <h5 class="card-title">Official Tourist Guide</h5>
+                <a href="https://www.tourist-guides.gr/Guide/kaponis-paris/en-GB">
+                    <img src="resources/logo_association.png" alt="Tourist Guide" class="img-fluid" style="width: 200px; height: auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="container text-center py-5">
+    <!-- Logo -->
+    <div class="mb-4">
+        <img src="resources/logo2.png" alt="Logo" class="img-fluid" style="width: 100px; height: auto;">
+    </div>
+    <!-- Navigation Links -->
+    <div class="mb-3">
+        <a href="index.html" class="text-decoration-none text-dark mx-2">Home</a>
+        <a href="About.html" class="text-decoration-none text-dark mx-2">About Me</a>
+        <a href="Tours.html" class="text-decoration-none text-dark mx-2">Tours</a>
+        <a href="Contact.html" class="text-decoration-none text-dark mx-2">Contact</a>
+    </div>
+    <!-- Language Selection -->
+    <div class="d-flex justify-content-center gap-3">
+        <a href="lang-gr.html">
+            <img src="resources/greece.png" alt="Greek" class="img-fluid" style="width: 30px; height: 30px;">
+        </a>
+        <a href="lang-en.html">
+            <img src="resources/england.png" alt="English" class="img-fluid" style="width: 30px; height: 30px;">
+        </a>
+    </div>
+</footer>
+
+    <script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const menuToggle = document.getElementById('menuToggle');
+		const menuTab = document.getElementById('menuTab');
+		const closeMenu = document.getElementById('closeMenu');
+		const menuOverlay = document.getElementById('menuOverlay');
+		const body = document.body;
+
+		// Open menu
+		menuToggle.addEventListener('click', () => {
+			menuTab.style.transform = 'translateX(0)';
+			body.classList.add('menu-open');
+			menuOverlay.classList.add('show'); // Show overlay
+		});
+
+		// Close menu
+		const closeMenuFunction = () => {
+			menuTab.style.transform = 'translateX(-100%)';
+			body.classList.remove('menu-open');
+			menuOverlay.classList.remove('show'); // Hide overlay
+		};
+
+		// Close menu on overlay click
+		menuOverlay.addEventListener('click', closeMenuFunction);
+
+		// Close menu on close button click
+		closeMenu.addEventListener('click', closeMenuFunction);
+	});
+	
+	document.addEventListener('DOMContentLoaded', () => {
+    const contactButton = document.getElementById('contactButton');
+    const contactOptions = document.querySelectorAll('.contact-option');
+
+    // Toggle visibility of contact options when main button is clicked
+    contactButton.addEventListener('click', () => {
+        contactOptions.forEach(option => {
+            if (option.classList.contains('show')) {
+                option.classList.remove('show'); // Hide options
+            } else {
+                option.classList.add('show'); // Show options with animation
+            }
+        });
+    });
+});
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
