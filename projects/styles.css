@@ -1,0 +1,128 @@
+.card-title {
+	background-color: #00543d; 
+    color: white;
+}
+
+/* Animation Styles */
+  .pop-in-card {
+    animation: popIn 1s ease forwards;
+    transform: translateY(50px);
+  }
+
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hover Effect */
+  .card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
+/* Project Card Layout */
+        .project-card {
+            display: flex;
+            flex-direction: row; /* Ensures left text & right image */
+            align-items: center;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            gap: 20px;
+        }
+
+        /* Left Section: Project Info */
+        .project-info {
+            flex: 1;
+            text-align: left; /* Ensure left alignment */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Space out text & icon */
+            height: 100%;
+        }
+
+        /* Project Title */
+        .project-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        /* Right Section: Image */
+        .project-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        /* Make Image Responsive */
+        .project-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Project Link Icon (Smaller & Aligned to Bottom) */
+        .project-link img {
+            width: 20px; /* Make icon smaller */
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-link img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Make Link Stay at the Bottom */
+        .project-link {
+            align-self: flex-start;
+            margin-top: auto; /* Push it to the bottom */
+        }
+
+		/* Move arrows closer to the edges */
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 5%; /* Reduce button width */
+}
+
+/* Position arrows at the very edge */
+.carousel-control-prev {
+    left: -30px; /* Move left arrow further left */
+}
+
+.carousel-control-next {
+    right: -30px; /* Move right arrow further right */
+}
+
+/* Change arrow color */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    filter: invert(100%); /* Makes them white */
+}
+
+/* Optional: Change arrow background color */
+.carousel-control-prev, 
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border-radius: 50%; /* Make them circular */
+    width: 50px; /* Adjust button size */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make arrows bigger */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+

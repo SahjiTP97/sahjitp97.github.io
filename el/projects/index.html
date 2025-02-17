@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <title>Θανάσης Παπαδόπουλος | Τεχνικός Σύμβουλος | Εργασίες</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/assets/logo_tab.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/global-styles.css">
+    <link rel="stylesheet" href="/styles.css">
+	<link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-small container-fluid p-3 position-sticky top-0">
+		<div class="d-flex justify-content-between align-items-center position-relative">
+			<!-- Left-aligned Menu Button -->
+			<button id="menuToggle" class="btn p-0">
+				<img src="/assets/menu.png" alt="Menu Icon" style="width: 40px; height: 40px;">
+			</button>
+			<!-- Centered Name -->
+			<h5 class="fw-bold position-absolute start-50 translate-middle-x">Θανάσης Παπαδόπουλος</h5>
+		</div>
+	
+        <div id="menuTab" class="position-fixed top-0 start-0 bg-light shadow h-100 p-4">
+            <button id="closeMenu" class="btn-close position-absolute top-0 end-0 m-3"></button>
+            <ul class="nav flex-column text-start">
+                <li class="nav-item mb-3">
+                    <a href="/el" class="nav-link text-dark">Αρχική</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="/el/projects" class="nav-link text-dark active">Εργασίες</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="/el/contact" class="nav-link text-dark">Επικοινωνία</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/el/projects" class="nav-link">
+                        <img src="/assets/greece.png" alt="Greek" style="width: 30px; height: 30px;" >
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects" class="nav-link">
+                        <img src="/assets/england.png" alt="English" style="width: 30px; height: 30px;" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="menuOverlay"></div>
+    </header>
+    <header class="header-large container-fluid p-3 position-sticky top-0">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid d-flex align-items-center">
+				<h5 class="fw-bold">Θανάσης Παπαδόπουλος</h5>
+                <ul class="nav mx-auto" style="flex-grow: 1; justify-content: center; display: flex; position: relative; left: -60px;">
+                    <li class="nav-item">
+                        <a href="/el" class="nav-link text-white">Αρχική</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/el/projects" class="nav-link text-white active">Εργασίες</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/el/contact" class="nav-link text-white">Επικοινωνία</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex pe-5">
+                    <a href="/projects" class="me-2">
+                        <img src="/assets/england.png" alt="English" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="/el/projects">
+                        <img src="/assets/greece.png" alt="Greek" style="width: 30px; height: 30px;">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+	
+	<section id="aboutMe" class="container-fluid my-0 p-0 bg-light">
+            <div class="parallax position-relative">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h1 class="display-6 fw-bold">Εργασίες</h1>
+                </div>
+            </div>
+        
+        </section>
+		
+		<section id="projects" class="projects container py-5">
+			<!-- Large screens: 600px height -->
+			<div class="d-none d-lg-block" style="height: 600px; overflow: hidden;">
+				<div id="projectCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+					<div class="carousel-inner h-100">
+						<!-- Your carousel items here -->
+						<!-- Project 1 -->
+						<div class="carousel-item active" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Επεξεργασία υπερφασματικών εικόνων (HSI) (φασματική απομίξη και ταξινόμηση)</h2>
+										<p>
+										Αυτή η εργασία εστιάζει στην ανάλυση δεδομένων υπερφασματικής απεικόνισης, συγκεκριμένα του συνόλου δεδομένων Salinas, το οποίο χρησιμοποιείται συνήθως σε εφαρμογές τηλεπισκόπησης. Το σύνολο δεδομένων περιέχει φασματικά δεδομένα υψηλών διαστάσεων γεωργικών αγρών, που καταγράφονται σε πολλαπλά μήκη κύματος. Οι πρωταρχικοί στόχοι αυτού του έργου περιλαμβάνουν την προεπεξεργασία δεδομένων, την εξαγωγή χαρακτηριστικών και την ταξινόμηση χρησιμοποιώντας διάφορες τεχνικές μηχανικής μάθησης.
+										Αυτή η εργασία επιδεικνύει με επιτυχία την εφαρμογή τεχνικών μηχανικής μάθησης στην ταξινόμηση υπερφασματικών εικόνων. Αξιοποιώντας φασματικά δεδομένα και πληροφορίες τελικού μέλους, επιτυγχάνει την ταξινόμηση των γεωργικών αγρών σε διάφορους τύπους καλλιεργειών με εύλογο βαθμό ακρίβειας. Το έργο υπογραμμίζει τη σημασία της προεπεξεργασίας και της εξαγωγής χαρακτηριστικών για το χειρισμό δεδομένων υψηλών διαστάσεων τυπικά στην τηλεπισκόπηση.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Machine-Learning-for-HSI-Processing-" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/HSI_project.png" class="img-fluid" alt="Project Image 1">
+								</div>
+							</div>
+						</div>
+						<!-- Project 2 -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Στατιστική Ανάλυση AirBnB της Αθήνας</h2>
+										<p>
+										Αυτή η εργασία επικεντρώνεται στην ανάλυση καταχωρίσεων της Airbnb στην Αθήνα χρησιμοποιώντας δεδομένα από την πλατφόρμα Inside Airbnb. Στόχος είναι η εξερεύνηση και η κατανόηση διάφορων πτυχών της αγοράς Airbnb στην Αθήνα, όπως η δημοτικότητα ανά γειτονιά, οι τάσεις τιμών, η διαθεσιμότητα και οι δυνατότητες εισοδήματος για τους οικοδεσπότες. Η ανάλυση στοχεύει να παράσχει πληροφορίες για το πώς η Airbnb επηρεάζει την τοπική αγορά κατοικίας και τον τουριστικό κλάδο.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Athens-AirBnB-Statistical-Analysis" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/AirBnB.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<!-- Additional projects follow the same structure -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Βελτιστοποίηση χαρτοφυλακίου μετοχών με περιορισμούς (Μοντέλο Markowitz)</h2>
+										<p>
+										Αυτή η εργασία εστιάζει στην ανάλυση οικονομικών δεδομένων, που σχετίζονται με τη διαχείριση χαρτοφυλακίου. Πρωταρχικός στόχος του έργου είναι η βελτιστοποίηση ενός χρηματοοικονομικού χαρτοφυλακίου. Η προσέγγιση που βασίζεται στα δεδομένα περιλαμβάνει την προεπεξεργασία οικονομικών δεδομένων, τον διαχωρισμό τους σε σύνολα εκπαίδευσης και δοκιμών και την εφαρμογή τεχνικών βελτιστοποίησης για την επίτευξη βέλτιστης κατανομής χαρτοφυλακίου.
+										Αυτή η εργασία καταδεικνύει αποτελεσματικά την εφαρμογή των τεχνικών της επιστήμης δεδομένων στη διαχείριση χαρτοφυλακίου. Αυτή η προσέγγιση είναι θεμελιώδης στη χρηματοοικονομική ανάλυση και είναι κρίσιμη για τη λήψη τεκμηριωμένων επενδυτικών αποφάσεων.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Portfolio-Optimization" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/portfolio.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Ταξινόμηση χειρόγραφων ψηφίων με SVD</h2>
+										<p>
+										Αυτή η εργασία επικεντρώνεται στην ταξινόμηση χειρόγραφων ψηφίων χρησιμοποιώντας προεπεξεργασία δεδομένων, Singular Value Decomposition (SVD) και επακόλουθες τεχνικές ταξινόμησης. Ο πρωταρχικός στόχος είναι να επιτευχθεί ακριβής αναγνώριση ψηφίων αξιοποιώντας το SVD για την αποσύνθεση και ανάλυση των δεδομένων πριν από την εφαρμογή αλγορίθμων ταξινόμησης.
+										Αυτή η εργασία παρουσιάζει την εφαρμογή προηγμένων τεχνικών γραμμικής άλγεβρας όπως το SVD σε πρακτικές μηχανικής μάθησης, ιδιαίτερα στην αναγνώριση εικόνων. Η επιτυχής εφαρμογή του SVD και η χρήση του για τη βελτίωση της ακρίβειας ταξινόμησης είναι ο στόχος αυτής της εργασίας.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/SVD-Handwritten-Digit-Classification" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/SVD.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Αναλυτική κειμένων - Ετικέτες POS (MLP, RNN, CNN)</h2>
+										<p>
+										Αυτή η εργασία εστιάζει στην Επεξεργασία Φυσικής Γλώσσας (NLP) χρησιμοποιώντας τεχνικές μηχανικής μάθησης για την ταξινόμηση ετικετών Part-of-Speech (POS) σε ιταλικό κείμενο. Το έργο περιλαμβάνει προετοιμασία δεδομένων, δημιουργία ενσωμάτωσης λέξεων με χρήση FastText και εκπαίδευση ενός Perceptron πολλαπλών επιπέδων (MLP), ενός RNN και ενός μοντέλου CNN για ταξινόμηση.
+										Οι ενσωματώσεις λέξεων FastText χρησιμοποιούνται για τη μετατροπή λέξεων σε αριθμητικά διανύσματα. Το έργο χρησιμοποιεί συγκεκριμένα ενσωματώσεις ιταλικών λέξεων, όπου κάθε λέξη αναπαρίσταται ως διάνυσμα 300 διαστάσεων. Για κάθε παράθυρο τριών λέξεων, αυτά τα διανύσματα συνδέονται για να σχηματίσουν ένα διάνυσμα 900 διαστάσεων, το οποίο χρησιμεύει ως είσοδος στο μοντέλο.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Text-Analytics-POS-Tagger-MLP" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/MLP.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Navigation Buttons -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+
+			<!-- Small screens: 900px height -->
+			<div class="d-lg-none" style="height: 1000px; overflow: hidden;">
+				<div id="projectCarouselSmall" class="carousel slide h-100" data-bs-ride="carousel">
+					<div class="carousel-inner h-100">
+						<!-- Your carousel items here (same content) -->
+						<!-- Project 1 -->
+						<div class="carousel-item active" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Επεξεργασία υπερφασματικών εικόνων (HSI) (φασματική απομίξη και ταξινόμηση)</h2>
+										<p>
+										Αυτή η εργασία εστιάζει στην ανάλυση δεδομένων υπερφασματικής απεικόνισης, συγκεκριμένα του συνόλου δεδομένων Salinas, το οποίο χρησιμοποιείται συνήθως σε εφαρμογές τηλεπισκόπησης. Το σύνολο δεδομένων περιέχει φασματικά δεδομένα υψηλών διαστάσεων γεωργικών αγρών, που καταγράφονται σε πολλαπλά μήκη κύματος. Οι πρωταρχικοί στόχοι αυτού του έργου περιλαμβάνουν την προεπεξεργασία δεδομένων, την εξαγωγή χαρακτηριστικών και την ταξινόμηση χρησιμοποιώντας διάφορες τεχνικές μηχανικής μάθησης.
+										Αυτή η εργασία επιδεικνύει με επιτυχία την εφαρμογή τεχνικών μηχανικής μάθησης στην ταξινόμηση υπερφασματικών εικόνων. Αξιοποιώντας φασματικά δεδομένα και πληροφορίες τελικού μέλους, επιτυγχάνει την ταξινόμηση των γεωργικών αγρών σε διάφορους τύπους καλλιεργειών με εύλογο βαθμό ακρίβειας. Το έργο υπογραμμίζει τη σημασία της προεπεξεργασίας και της εξαγωγής χαρακτηριστικών για το χειρισμό δεδομένων υψηλών διαστάσεων τυπικά στην τηλεπισκόπηση.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Machine-Learning-for-HSI-Processing-" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/HSI_project.png" class="img-fluid" alt="Project Image 1">
+								</div>
+							</div>
+						</div>
+						<!-- Project 2 -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Στατιστική Ανάλυση AirBnB της Αθήνας</h2>
+										<p>
+										Αυτή η εργασία επικεντρώνεται στην ανάλυση καταχωρίσεων της Airbnb στην Αθήνα χρησιμοποιώντας δεδομένα από την πλατφόρμα Inside Airbnb. Στόχος είναι η εξερεύνηση και η κατανόηση διάφορων πτυχών της αγοράς Airbnb στην Αθήνα, όπως η δημοτικότητα ανά γειτονιά, οι τάσεις τιμών, η διαθεσιμότητα και οι δυνατότητες εισοδήματος για τους οικοδεσπότες. Η ανάλυση στοχεύει να παράσχει πληροφορίες για το πώς η Airbnb επηρεάζει την τοπική αγορά κατοικίας και τον τουριστικό κλάδο.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Athens-AirBnB-Statistical-Analysis" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/AirBnB.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<!-- Additional projects follow the same structure -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Βελτιστοποίηση χαρτοφυλακίου μετοχών με περιορισμούς (Μοντέλο Markowitz)</h2>
+										<p>
+										Αυτή η εργασία εστιάζει στην ανάλυση οικονομικών δεδομένων, που σχετίζονται με τη διαχείριση χαρτοφυλακίου. Πρωταρχικός στόχος του έργου είναι η βελτιστοποίηση ενός χρηματοοικονομικού χαρτοφυλακίου. Η προσέγγιση που βασίζεται στα δεδομένα περιλαμβάνει την προεπεξεργασία οικονομικών δεδομένων, τον διαχωρισμό τους σε σύνολα εκπαίδευσης και δοκιμών και την εφαρμογή τεχνικών βελτιστοποίησης για την επίτευξη βέλτιστης κατανομής χαρτοφυλακίου.
+										Αυτή η εργασία καταδεικνύει αποτελεσματικά την εφαρμογή των τεχνικών της επιστήμης δεδομένων στη διαχείριση χαρτοφυλακίου. Αυτή η προσέγγιση είναι θεμελιώδης στη χρηματοοικονομική ανάλυση και είναι κρίσιμη για τη λήψη τεκμηριωμένων επενδυτικών αποφάσεων.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Portfolio-Optimization" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/portfolio.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Ταξινόμηση χειρόγραφων ψηφίων με SVD</h2>
+										<p>
+										Αυτή η εργασία επικεντρώνεται στην ταξινόμηση χειρόγραφων ψηφίων χρησιμοποιώντας προεπεξεργασία δεδομένων, Singular Value Decomposition (SVD) και επακόλουθες τεχνικές ταξινόμησης. Ο πρωταρχικός στόχος είναι να επιτευχθεί ακριβής αναγνώριση ψηφίων αξιοποιώντας το SVD για την αποσύνθεση και ανάλυση των δεδομένων πριν από την εφαρμογή αλγορίθμων ταξινόμησης.
+										Αυτή η εργασία παρουσιάζει την εφαρμογή προηγμένων τεχνικών γραμμικής άλγεβρας όπως το SVD σε πρακτικές μηχανικής μάθησης, ιδιαίτερα στην αναγνώριση εικόνων. Η επιτυχής εφαρμογή του SVD και η χρήση του για τη βελτίωση της ακρίβειας ταξινόμησης είναι ο στόχος αυτής της εργασίας.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/SVD-Handwritten-Digit-Classification" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/SVD.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Αναλυτική κειμένων - Ετικέτες POS (MLP, RNN, CNN)</h2>
+										<p>
+										Αυτή η εργασία εστιάζει στην Επεξεργασία Φυσικής Γλώσσας (NLP) χρησιμοποιώντας τεχνικές μηχανικής μάθησης για την ταξινόμηση ετικετών Part-of-Speech (POS) σε ιταλικό κείμενο. Το έργο περιλαμβάνει προετοιμασία δεδομένων, δημιουργία ενσωμάτωσης λέξεων με χρήση FastText και εκπαίδευση ενός Perceptron πολλαπλών επιπέδων (MLP), ενός RNN και ενός μοντέλου CNN για ταξινόμηση.
+										Οι ενσωματώσεις λέξεων FastText χρησιμοποιούνται για τη μετατροπή λέξεων σε αριθμητικά διανύσματα. Το έργο χρησιμοποιεί συγκεκριμένα ενσωματώσεις ιταλικών λέξεων, όπου κάθε λέξη αναπαρίσταται ως διάνυσμα 300 διαστάσεων. Για κάθε παράθυρο τριών λέξεων, αυτά τα διανύσματα συνδέονται για να σχηματίσουν ένα διάνυσμα 900 διαστάσεων, το οποίο χρησιμεύει ως είσοδος στο μοντέλο.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Text-Analytics-POS-Tagger-MLP" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/MLP.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Navigation Buttons -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#projectCarouselSmall" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#projectCarouselSmall" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		
+		
+	
+
+
+        
+        <section id="imageContinuation" class="parallax"></section>
+	
+	</main>
+
+    <div id="contactButtonContainer">
+        <button id="contactButton" class="btn p-0">
+            <img src="assets/contact.png" alt="Contact" style="width: 60px; height: 60px;" >
+        </button>
+    
+        <a href="mailto:tesarena@gmail.com" id="emailButton" class="contact-option">
+            <img src="assets/email.png" alt="Email" style="width: 50px; height: 50px;" >
+        </a>
+
+        <a href="viber://chat?number=+306946867876" id="viberButton" class="contact-option">
+            <img src="assets/viber.png" alt="Viber" style="width: 50px; height: 50px;" >
+        </a>
+    </div>
+
+    <section class="container-fluid mb-0 mt-4 pt-0 footer-gray">
+        <div class="row g-4">
+            <div class="col-12 col-md">
+                <div class="p-3 text-center">
+                    <h5>Σχετικά με εμένα</h5>
+                    <p>Γεια, είμαι ο Θανάσης.<br><br> Είμαι τεχνικός σύμβουλος με ενδιαφέρον για οτιδήποτε σχετίζεται με την πληροφορική και τις νέες τεχνολογίες.
+					Αυτήν τη στιγμή εργάζομαι στην παροχή εξατομικευμένων λύσεων σε χρηματοπιστωτικά ιδρύματα. Με πάθος για την επιστήμη των δεδομένων,
+					ασχολούμε με την μηχανική μάθηση και στατιστικές τεχνικές για την ανάπτυξη προσωπικών έργων και γνώσεων.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="p-3 text-center">
+                    <h5>Πλοήγηση</h5>
+                    <div class="d-flex justify-content-center gap-2 mt-2">
+                        <ul class="nav flex-column text-center">
+                            <li class="nav-item">
+                                <a href="/el" class="nav-link text-dark">Αρχική</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/el/projects" class="nav-link text-dark active">Εργασίες</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/el/contact" class="nav-link text-dark">Επικοινωνία</a>
+                            </li>
+                            <li class="nav-item d-flex gap-3 mt-4 justify-content-center">
+                                <a href="/el/projects">
+                                    <img src="/assets/greece.png" alt="Greek" style="width: 30px; height: 30px;" >
+                                </a>
+                                <a href="/projects">
+                                    <img src="/assets/england.png" alt="English" style="width: 30px; height: 30px;" >
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md mb-3">
+                <div class="p-3">
+                    <h5 class="text-center">Στοιχεία επικοινωνίας</h5>
+                    <p class="text-center">
+                        Μη διστάσετε να επικοινωνήσετε μαζί μου για τυχόν ερωτήσεις. Θα χαρώ πολύ να σας βοηθήσω.<br><br>
+                        Θανάσης Παπαδόπουλος<br>
+                        Τεχνικός Σύμβουλος<br><br>
+                        Τηλέφωνο: <a href="tel:+306946867876" class="a-primary">+30 6946867876</a><br>
+                        Email: <a href="mailto:tesarena@gmail.com"
+                            class="a-primary">tesarena@gmail.com</a><br>
+                        Τοποθεσία: Αθήνα, Ελλάδα
+                    </p>
+					<li class="nav-item d-flex gap-3 justify-content-center">
+                        <a href="https://github.com/SahjiTP97">
+                            <img src="/assets/Github.png" alt="Greek" style="width: 30px; height: 30px;" >
+                        </a>
+                        <a href="https://linkedin.com/in/thanassis-papadopoulos-a9369826a/">
+                            <img src="/assets/Linkedin.png" alt="English" style="width: 30px; height: 30px;" >
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="container-fluid mb-0 pt-0 footer">
+    <footer class="container text-center py-3">
+		<div class="d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="/el" class="nav-link text-white">Αρχική</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/el/projects" class="nav-link text-white active">Εργασίες</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/el/contact" class="nav-link text-white">Επικοινωνία</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Language Icons Right-Aligned -->
+        <div class="d-flex justify-content-center gap-4 mt-2 mb-5">
+            <a href="/el/projects">
+                <img src="/assets/greece.png" alt="Greek" class="img-fluid" style="width: 30px; height: 30px;">
+            </a>
+            <a href="/projects">
+                <img src="/assets/england.png" alt="English" class="img-fluid" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+
+        <!-- Bottom Left Text -->
+        <div class="mt-auto d-flex justify-content-center">
+            <p class="text-white mb-0" style="font-size: 14px;">© 2025 Thanasis Papadopoulos. All rights reserved.</p>
+        </div>
+    </footer>
+	</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: auto !important;
+}
+
+:lang(el) {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+@media (min-width: 1025px) {
+
+    .header-large {
+        display: block !important;
+    }
+
+}
+
+@media (max-width: 1024.98px) {
+    .header-small {
+        display: block !important;
+    }
+
+}
+
+.section-content {
+    display: none;
+}
+
+.section-content.show {
+    display: block;
+}
+
+header {
+    z-index: 1060;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+#menuTab {
+    width: 200px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    overflow-y: auto;
+    z-index: 1060;
+}
+
+#menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    display: none;
+}
+
+#menuTab.show {
+    transform: translateX(0);
+}
+
+#menuOverlay.show {
+    display: block;
+}
+
+.header-large {
+    display: none;
+	background-color: #00543d; 
+    color: white;
+	box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+}
+
+.header-small {
+    display: none;
+	background-color: #00543d; 
+    color: white;
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 1025px) {
+
+    .header-large {
+        display: block !important;
+    }
+
+}
+
+@media (max-width: 1024.98px) {
+    .header-small {
+        display: block !important;
+    }
+
+}
+
+.footer-gray {
+    background-color: #eee;
+}
+
+.footer {
+	background-color: #00543d; 
+    color: white;
+	box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+#contactButtonContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+#contactButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-option {
+    display: none;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    z-index: 1040;
+}
+
+#emailButton {
+    bottom: 90px;
+}
+
+#viberButton {
+    bottom: 150px;
+}
+
+.contact-option.show {
+    display: block;
+    animation: slideUpFadeIn 0.5s ease forwards;
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Slide into place */
+    }
+}
+
+.parallax {
+    background-image: url('/assets/background.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    margin: 0;
+	box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.7), 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+#imageContinuation {
+    background-image: url('/assets/background.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+.parallax .position-absolute {
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+		#carousel slide {
+    height: 600px; /* Default height */
+}
+
+@media (max-width: 768px) {
+    #carousel slide {
+        height: 900px !important;
+    }
+}

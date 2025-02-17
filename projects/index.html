@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thanasis Papadopoulos | Technical Consultant | Projects</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/assets/logo_tab.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/global-styles.css">
+    <link rel="stylesheet" href="/styles.css">
+	<link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-small container-fluid p-3 position-sticky top-0">
+		<div class="d-flex justify-content-between align-items-center position-relative">
+			<!-- Left-aligned Menu Button -->
+			<button id="menuToggle" class="btn p-0">
+				<img src="/assets/menu.png" alt="Menu Icon" style="width: 40px; height: 40px;">
+			</button>
+			<!-- Centered Name -->
+			<h5 class="fw-bold position-absolute start-50 translate-middle-x">Thanasis Papadopoulos</h5>
+		</div>
+	
+        <div id="menuTab" class="position-fixed top-0 start-0 bg-light shadow h-100 p-4">
+            <button id="closeMenu" class="btn-close position-absolute top-0 end-0 m-3"></button>
+            <ul class="nav flex-column text-start">
+                <li class="nav-item mb-3">
+                    <a href="/" class="nav-link text-dark">Home</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="/projects" class="nav-link text-dark active">Projects</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="/contact" class="nav-link text-dark">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/el/contact" class="nav-link">
+                        <img src="/assets/greece.png" alt="Greek" style="width: 30px; height: 30px;" >
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">
+                        <img src="/assets/england.png" alt="English" style="width: 30px; height: 30px;" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="menuOverlay"></div>
+    </header>
+    <header class="header-large container-fluid p-3 position-sticky top-0">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid d-flex align-items-center">
+				<h5 class="fw-bold">Thanasis Papadopoulos</h5>
+                <ul class="nav mx-auto" style="flex-grow: 1; justify-content: center; display: flex; position: relative; left: -60px;">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/projects" class="nav-link text-white active">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-link text-white">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex pe-5">
+                    <a href="/contact" class="me-2">
+                        <img src="/assets/england.png" alt="English" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="/el/contact">
+                        <img src="/assets/greece.png" alt="Greek" style="width: 30px; height: 30px;">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+	
+	<section id="aboutMe" class="container-fluid my-0 p-0 bg-light">
+            <div class="parallax position-relative">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h1 class="display-6 fw-bold">Projects</h1>
+                </div>
+            </div>
+        
+        </section>
+		
+		<section id="projects" class="projects container py-5">
+			<!-- Large screens: 600px height -->
+			<div class="d-none d-lg-block" style="height: 600px; overflow: hidden;">
+				<div id="projectCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+					<div class="carousel-inner h-100">
+						<!-- Your carousel items here -->
+						<!-- Project 1 -->
+						<div class="carousel-item active" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Hyperspectral Images (HSI) processing (spectral unmixing and classification)</h2>
+										<p>
+											This project focuses on the analysis of hyperspectral imaging data, specifically the Salinas dataset, which is commonly used in remote sensing applications. The dataset contains high-dimensional spectral data of agricultural fields, captured across multiple wavelengths. The primary objectives of this project include data preprocessing, feature extraction, and classification using various machine learning techniques.
+											This project successfully demonstrates the application of machine learning techniques to hyperspectral image classification. By leveraging spectral data and endmember information, it achieves the classification of agricultural fields into various crop types with a reasonable degree of accuracy. The project highlights the importance of preprocessing and feature extraction in handling high-dimensional data typical in remote sensing.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Machine-Learning-for-HSI-Processing-" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/HSI_project.png" class="img-fluid" alt="Project Image 1">
+								</div>
+							</div>
+						</div>
+						<!-- Project 2 -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Athens AirBnB Statistical Analysis</h2>
+										<p>
+											This project is centered around analyzing Airbnb listings in Athens using data obtained from the Inside Airbnb platform. The objective is to explore and understand various aspects of the Airbnb market in Athens, such as neighborhood popularity, pricing trends, availability, and income potential for hosts. The analysis aims to provide insights into how Airbnb impacts the local housing market and tourism industry.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Athens-AirBnB-Statistical-Analysis" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/AirBnB.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<!-- Additional projects follow the same structure -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Constrained Portfolio Optimization (Markowitz Model)</h2>
+										<p>
+											This project focuses on financial data analysis, specifically related to portfolio management. The primary goal of the project is to optimize a financial portfolio. The data-driven approach involves pre-processing financial data, splitting it into training and testing sets, and applying optimization techniques to achieve an optimal portfolio allocation.
+											This project effectively demonstrates the application of data science techniques to portfolio management. This approach is foundational in financial analysis and is critical for making informed investment decisions.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Portfolio-Optimization" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/portfolio.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Handwritten Digits Classification with SVD</h2>
+										<p>
+											The project focuses on classifying handwritten digits using data preprocessing, Singular Value Decomposition (SVD), and subsequent classification techniques. The primary goal is to achieve accurate digit recognition by leveraging SVD to decompose and analyze the data before applying classification algorithms.
+											This project showcases the application of advanced linear algebra techniques like SVD in practical machine learning tasks, particularly in image recognition. The successful implementation of SVD and its use in enhancing classification accuracy are the significant achievements of this work.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/SVD-Handwritten-Digit-Classification" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/SVD.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Text Analytics - POS Tagger (MLP,RNNs,CNNs)</h2>
+										<p>
+											The third project focuses on Natural Language Processing (NLP) using machine learning techniques to classify Part-of-Speech (POS) tags in Italian text. The project involves data preparation, word embedding generation using FastText, and training a Multi-Layer Perceptron (MLP), an RNN and a CNN model for classification.
+											FastText word embeddings are used to convert words into numerical vectors. The project specifically utilizes Italian word embeddings, where each word is represented as a 300-dimensional vector. For each window of three words, these vectors are concatenated to form a 900-dimensional vector, which serves as input to the model.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Text-Analytics-POS-Tagger-MLP" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/MLP.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Navigation Buttons -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+
+			<!-- Small screens: 900px height -->
+			<div class="d-lg-none" style="height: 1000px; overflow: hidden;">
+				<div id="projectCarouselSmall" class="carousel slide h-100" data-bs-ride="carousel">
+					<div class="carousel-inner h-100">
+						<!-- Your carousel items here (same content) -->
+						<!-- Project 1 -->
+						<div class="carousel-item active" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Hyperspectral Images (HSI) processing (spectral unmixing and classification)</h2>
+										<p>
+											This project focuses on the analysis of hyperspectral imaging data, specifically the Salinas dataset, which is commonly used in remote sensing applications. The dataset contains high-dimensional spectral data of agricultural fields, captured across multiple wavelengths. The primary objectives of this project include data preprocessing, feature extraction, and classification using various machine learning techniques.
+											This project successfully demonstrates the application of machine learning techniques to hyperspectral image classification. By leveraging spectral data and endmember information, it achieves the classification of agricultural fields into various crop types with a reasonable degree of accuracy. The project highlights the importance of preprocessing and feature extraction in handling high-dimensional data typical in remote sensing.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Machine-Learning-for-HSI-Processing-" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/HSI_project.png" class="img-fluid" alt="Project Image 1">
+								</div>
+							</div>
+						</div>
+						<!-- Project 2 -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Athens AirBnB Statistical Analysis</h2>
+										<p>
+											This project is centered around analyzing Airbnb listings in Athens using data obtained from the Inside Airbnb platform. The objective is to explore and understand various aspects of the Airbnb market in Athens, such as neighborhood popularity, pricing trends, availability, and income potential for hosts. The analysis aims to provide insights into how Airbnb impacts the local housing market and tourism industry.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Athens-AirBnB-Statistical-Analysis" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/AirBnB.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<!-- Additional projects follow the same structure -->
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Constrained Portfolio Optimization (Markowitz Model)</h2>
+										<p>
+											This project focuses on financial data analysis, specifically related to portfolio management. The primary goal of the project is to optimize a financial portfolio. The data-driven approach involves pre-processing financial data, splitting it into training and testing sets, and applying optimization techniques to achieve an optimal portfolio allocation.
+											This project effectively demonstrates the application of data science techniques to portfolio management. This approach is foundational in financial analysis and is critical for making informed investment decisions.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Portfolio-Optimization" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/portfolio.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Handwritten Digits Classification with SVD</h2>
+										<p>
+											The project focuses on classifying handwritten digits using data preprocessing, Singular Value Decomposition (SVD), and subsequent classification techniques. The primary goal is to achieve accurate digit recognition by leveraging SVD to decompose and analyze the data before applying classification algorithms.
+											This project showcases the application of advanced linear algebra techniques like SVD in practical machine learning tasks, particularly in image recognition. The successful implementation of SVD and its use in enhancing classification accuracy are the significant achievements of this work.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/SVD-Handwritten-Digit-Classification" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/SVD.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="height: 100%;">
+							<div class="row h-100 align-items-center">
+								<div class="col-md-6 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Text Analytics - POS Tagger (MLP,RNNs,CNNs)</h2>
+										<p>
+											The third project focuses on Natural Language Processing (NLP) using machine learning techniques to classify Part-of-Speech (POS) tags in Italian text. The project involves data preparation, word embedding generation using FastText, and training a Multi-Layer Perceptron (MLP), an RNN and a CNN model for classification.
+											FastText word embeddings are used to convert words into numerical vectors. The project specifically utilizes Italian word embeddings, where each word is represented as a 300-dimensional vector. For each window of three words, these vectors are concatenated to form a 900-dimensional vector, which serves as input to the model.
+										</p>
+									</div>
+									<div class="text-end">
+										<a href="https://github.com/SahjiTP97/Text-Analytics-POS-Tagger-MLP" target="_blank">
+											<img src="assets/Github.png" alt="GitHub Icon" width="40px">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<img src="assets/MLP.png" class="img-fluid" alt="Project Image 2">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Navigation Buttons -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#projectCarouselSmall" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#projectCarouselSmall" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		
+		
+	
+
+
+        
+        <section id="imageContinuation" class="parallax"></section>
+	
+	</main>
+
+    <div id="contactButtonContainer">
+        <button id="contactButton" class="btn p-0">
+            <img src="assets/contact.png" alt="Contact" style="width: 60px; height: 60px;" >
+        </button>
+    
+        <a href="mailto:tesarena@gmail.com" id="emailButton" class="contact-option">
+            <img src="assets/email.png" alt="Email" style="width: 50px; height: 50px;" >
+        </a>
+
+        <a href="viber://chat?number=+306946867876" id="viberButton" class="contact-option">
+            <img src="assets/viber.png" alt="Viber" style="width: 50px; height: 50px;" >
+        </a>
+    </div>
+
+    <section class="container-fluid mb-0 mt-4 pt-0 footer-gray">
+        <div class="row g-4">
+            <div class="col-12 col-md">
+                <div class="p-3 text-center">
+                    <h5>About Me</h5>
+                    <p>Hi, I'm Thanasis.<br><br> I’m a technical consultant with interest in everything related to IT and new technologies.
+					I' m currently working in delivering tailored solutions to financial institutions. With a passion for data science, I 
+					also implement ML and statistical techniques to develop personal projects and knowledge.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="p-3 text-center">
+                    <h5>Navigation</h5>
+                    <p>Find your way with ease.</p>
+                    <div class="d-flex justify-content-center gap-2 mt-2">
+                        <ul class="nav flex-column text-center">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link text-dark">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/projects" class="nav-link text-dark active">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact" class="nav-link text-dark">Contact</a>
+                            </li>
+                            <li class="nav-item d-flex gap-3 mt-4 justify-content-center">
+                                <a href="/el/contact">
+                                    <img src="/assets/greece.png" alt="Greek" style="width: 30px; height: 30px;" >
+                                </a>
+                                <a href="/contact">
+                                    <img src="/assets/england.png" alt="English" style="width: 30px; height: 30px;" >
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md mb-3">
+                <div class="p-3">
+                    <h5 class="text-center">Contact Details</h5>
+                    <p class="text-center">
+                        Don’t hesitate to contact me for any questions. I will be more than happy to help you.<br><br>
+                        Thanasis Papadopoulos<br>
+                        Technical Consultant<br><br>
+                        Phone: <a href="tel:+306946867876" class="a-primary">+30 6946867876</a><br>
+                        Email: <a href="mailto:tesarena@gmail.com"
+                            class="a-primary">tesarena@gmail.com</a><br>
+                        Location: Athens, Greece
+                    </p>
+					<li class="nav-item d-flex gap-3 justify-content-center">
+                        <a href="https://github.com/SahjiTP97">
+                            <img src="/assets/Github.png" alt="Greek" style="width: 30px; height: 30px;" >
+                        </a>
+                        <a href="https://linkedin.com/in/thanassis-papadopoulos-a9369826a/">
+                            <img src="/assets/Linkedin.png" alt="English" style="width: 30px; height: 30px;" >
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="container-fluid mb-0 pt-0 footer">
+    <footer class="container text-center py-3">
+		<div class="d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="/" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects" class="nav-link text-white active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link text-white">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Language Icons Right-Aligned -->
+        <div class="d-flex justify-content-center gap-4 mt-2 mb-5">
+            <a href="/el/contact">
+                <img src="/assets/greece.png" alt="Greek" class="img-fluid" style="width: 30px; height: 30px;">
+            </a>
+            <a href="/contact">
+                <img src="/assets/england.png" alt="English" class="img-fluid" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+
+        <!-- Bottom Left Text -->
+        <div class="mt-auto d-flex justify-content-center">
+            <p class="text-white mb-0" style="font-size: 14px;">© 2025 Thanasis Papadopoulos. All rights reserved.</p>
+        </div>
+    </footer>
+	</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
